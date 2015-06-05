@@ -1,2 +1,2 @@
 # hello_GIT
-Sólo un repositorio de Meteor para para comenzar a usar GitHub
+Unas pruebas con MeteorJS para comenzar con GitHub
