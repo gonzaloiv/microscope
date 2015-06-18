@@ -8,9 +8,9 @@ Template.postSubmit.events({
         };
 
         var errors = validatePost(post);
-        if(errors.title || errors.url)
+        if (errors.title || errors.url)
             return Session.set('postSubmitErrors', errors);
-        
+
         Meteor.call('postInsert', post, function (error, result) {
             // display the error to the user and abort
             if (error)
