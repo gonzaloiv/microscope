@@ -12,9 +12,3 @@ var postsData = [
         url: 'http://themeteorbook.com'
   }
 ];
-
-Template.postsList.helpers({
-    posts: function(){
-        return Posts.find({}, {sort:{submitted:-1}});
-    }
-});
