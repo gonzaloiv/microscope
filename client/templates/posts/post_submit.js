@@ -7,7 +7,7 @@ Template.postSubmit.events({
             title: $(e.target).find('[name=title]').val()
         };
 
-        var errors = validatePost(post);
+        var errors = validatePosts(post);
         if (errors.title || errors.url)
             return Session.set('postSubmitErrors', errors);
 
